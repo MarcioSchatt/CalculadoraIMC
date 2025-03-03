@@ -3,13 +3,15 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
 
     const peso = parseFloat(document.getElementById('peso').value);
     const altura = parseFloat(document.getElementById('altura').value);
+    const erroMsg = document.getElementById('erroMensagem');
+    erroMsg.textContent = '';
 
     if (isNaN(peso) || peso <= 0) {
-        alert("Valores inválidos para peso.");
+        erroMsg.textContent = "Valores inválidos para peso.";
         return;
     }
     if (isNaN(altura) || altura <= 0) {
-        alert("Valores inválidos para altura.");
+        erroMsg.textContent = "Valores inválidos para altura.";
         return;
     }
 

@@ -16,13 +16,14 @@
         <form id="imcForm">
             <div>
                 <label for="peso">Peso (kg):</label>
-                <input type="number" id="peso" required>
+                <input type="number" id="peso" placeholder="Ex: 85" required>
             </div>
             <div>
                 <label for="altura">Altura (m):</label>
-                <input type="number" id="altura" step="0.01" required>
+                <input type="number" id="altura" step="0.01" placeholder="Ex: 1.80" required>
             </div>
             <button type="submit">Calcular IMC</button>
+            <p id="erroMensagem" style="color: red"; font-weight: bold;></p>
         </form>
         <div id="resultado">
             <h2>Resultado</h2>
